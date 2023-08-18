@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lena Image Example</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+  <h1>Lena Image</h1>
+  <img id="lenaImage" src="OIP.png" alt="Lena Image">
+  <input
+    id="brightnessSlider"
+    type="range"
+    min="-100"
+    max="100"
+    step="1"
+    value="0"
+  >
+  <button id="mybtn" type="button">Change to grayscale</button>
+  <button id="resetBtn" type="button">Reset Image</button>
+  
+  <button id="invertBtn" type="button">Invert Image</button>
+  <input
+    id="saturationSlider"
+    type="range"
+    min="0"
+    max="2"
+    step="0.01"
+    value="1"
+  >
+  <button id="mirrorBtn" type="button">Mirror Image</button>
+
+  <script src="grayscale.js"></script>
+  <script src="brightness.js"></script>
+  <script src="invert.js"></script>
+  <script src="saturation.js"></script>
+  <script src="mirror.js"></script>
+  <script src="reset.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
