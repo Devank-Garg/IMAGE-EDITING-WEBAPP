@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Magician</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="parallax1">
+      <div class="head">Image Magician</div>
+      <div class="img_select">
+        <button id="getStartedBtn" class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Get Started</span>
+        </button>
+      </div>
+    </div>
+    <script>
+      const getStartedBtn = document.getElementById("getStartedBtn");
+      getStartedBtn.addEventListener("click", function() {
+        window.location.href = "tool.html";
+      });
+    </script>
+    <section>
+      <h1>About</h1>
+      <div>
+        <p>
+          Augmentation is the action or process of making or becoming greater in
+          size or amount. Image Augmentation is the process of generating new
+          images for training our deep learning model.
+        </p>
+      </div>
+    </section>
+
+    <div class="parallax4">
+      <div class="head">Happy Editing 😁</div>
+    </div>
+    <footer class="social-icons">
+      <a href="https://github.com/Devank-Garg" target="_blank" rel="noopener noreferrer"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/devank-here/" target="_blank" rel="noopener noreferrer"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </footer>
+  </body>
+</html>

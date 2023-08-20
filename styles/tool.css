@@ -1,0 +1,476 @@
+User
+/* Reset some default styles */
+body, h1, button, input, label {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Arial, sans-serif;
+  
+}
+body{
+  background-image: url('../img/Birdy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.texttile {
+  font-size: 52px; /* Adjust font size as needed */
+  font-weight: 900; /* Bold and heavy font weight */
+  text-align: center;
+  margin-top: 25px; /* Adjust margin as needed */
+}
+.texttile:hover {
+  color: transparent; /* Make the text color transparent on hover */
+}
+
+
+
+
+
+/* Center the content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  /* Stretch the background image */
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --background-color: black;
+  --text-color: hsl(0, 0%, 100%);
+}
+body {
+  margin: 0;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+
+
+/* Main content wrapper */
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+/* Label Styles */
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  padding-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+}
+
+/* Input Slider Styles */
+input[type="range"] {
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+/* Set the theme colors for the sliders */
+input[type="range"] {
+  background-color: #f0f0f0;
+  border: none;
+}
+
+/* Style the thumb (slider handle) */
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #5bc0de;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: #5bc0de;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Style the track (slider bar) */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background-color: #5bc0de;
+  border-radius: 2px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  background-color: #5bc0de;
+  border-radius: 2px;
+}
+
+/* Style the filled part of the track */
+input[type="range"]::-moz-range-progress {
+  height: 4px;
+  background-color: #5bc0de;
+  border-radius: 2px;
+}
+
+/* Hide the slider's default focus styles */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* Set the theme colors for the slider when active (clicked) */
+input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #5bc0de;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  background-color: #5bc0de;
+}
+
+
+
+/* Custom Button Styles */
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 50px; /* Add padding */
+  margin: 50px; /* Add margin */
+  margin-top: 70px;
+}
+
+#mybtn,
+#mirrorBtn,
+#resetBtn,
+#invertBtn {
+  background-color: #5bc0de; /* Sky bluish color */
+  border-radius: 100px;
+  box-shadow: rgba(91, 192, 222, 0.2) 0 -25px 18px -14px inset, rgba(91, 192, 222, 0.15) 0 1px 2px, rgba(91, 192, 222, 0.15) 0 2px 4px, rgba(91, 192, 222, 0.15) 0 4px 8px, rgba(91, 192, 222, 0.15) 0 8px 16px, rgba(91, 192, 222, 0.15) 0 16px 32px;
+  color: white; /* Text color */
+  cursor: pointer;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 20px; /* Adjust padding */
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 10px;
+  width: 200px; /* Set a fixed width */
+  display: inline-block; /* Ensures buttons are on the same line */
+}
+
+#mybtn:hover,
+#mirrorBtn:hover,
+#resetBtn:hover,
+#invertBtn:hover {
+  background: linear-gradient(45deg, #00ccff, #0099ff, #0066ff); /* Sky bluish gradient */
+  background-size: 200% 200%;
+  animation: gradientShift 2s ease infinite, neonGlow 1.5s ease alternate infinite;
+  box-shadow: rgba(91, 192, 222, 0.35) 0 -25px 18px -14px inset, rgba(91, 192, 222, 0.25) 0 1px 2px, rgba(91, 192, 222, 0.25) 0 2px 4px, rgba(91, 192, 222, 0.25) 0 4px 8px, rgba(91, 192, 222, 0.25) 0 8px 16px, rgba(91, 192, 222, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  text-shadow: 0 0 10px rgba(91, 192, 222, 0.7);
+  color: white;
+}
+
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: rgba(45, 205, 223, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+  }
+  100% {
+    box-shadow: rgba(45, 205, 223, 0.35)0 -25px 18px -14px inset, rgba(44, 187, 99, 0.3) 0 1px 2px, rgba(44, 187, 99, 0.3) 0 2px 4px, rgba(44, 187, 99, 0.3) 0 4px 8px, rgba(44, 187, 99, 0.3) 0 8px 16px, rgba(44, 187, 99, 0.3) 0 16px 32px;
+  }
+}
+
+
+
+
+.right-side {
+  margin-top: 60px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-upload-box {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2); /* Reduced opacity */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid transparent; /* Add transparent border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth color change */
+}
+
+.image-upload-box:hover {
+  background-color: rgba(172, 242, 251, 0.829); /* Full opacity on hover */
+  border-color: rgba(239, 239, 239, 0.1); /* Change border color on hover */
+}
+
+.image-upload-box input[type="file"] {
+  display: none;
+}
+
+.image-upload-box label {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.1); /* Initial background color */
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.image-upload-box label:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Change background color on hover */
+}
+
+
+
+.form-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+
+ 
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  #lenaImage {
+    max-width: 90%;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+footer{
+  width: 100%;
+  
+  color: #f2f2f2;
+  height: 3vh;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.cta {
+  position: relative;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
+
+@media (max-width:800px) {
+  .head{
+      font-size: 200%;
+  }
+ 
+}
+
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.social-icons {
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.social-icons a {
+  color: #15cce0;
+  margin-right: 15px;
+  margin-top: 20px;
+  transition: color 0.3s;
+
+}
+.social-icons a:hover {
+  color: rgb(44, 243, 150);
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu'); /*IMPORTANT*/
+
+.down-btn {
+  position: relative;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  margin-left: 50px;
+}
+
+.down-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.down-btn span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.down-btn svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.down-btn:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.down-btn:hover svg {
+  transform: translateX(0);
+}
+
+.down-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 800px) {
+  .head {
+    font-size: 200%;
+  }
+}
+
+</style>

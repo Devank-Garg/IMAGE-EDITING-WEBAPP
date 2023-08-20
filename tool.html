@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IMAGE MAGICIAN</title>
+  <link rel="stylesheet" href="styles/tool.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+<link rel="icon" type="image/png" href="img/favicon-16x16.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="texttile">IMAGE MAGICIAN</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <div class="container">
+    <button class="cta">
+      <span>GO BACK</span>
+      <svg viewBox="0 0 13 10" height="10px" width="15px">
+        <path d="M12,5 L1,5"></path>
+        <polyline points="4 1 1 5 4 9"></polyline>
+      </svg>
+      
+    </button>
+    <script>
+      const ctaButtons = document.getElementsByClassName("cta");
+      for (let i = 0; i < ctaButtons.length; i++) {
+        ctaButtons[i].addEventListener("click", function() {
+          window.location.href = "index.html";
+        });
+      }
+    </script>
+    
+    
+    <div class="main-content">
+      
+      <div class="button-box">
+      <button id="mybtn" type="button">Change to grayscale</button>
+      <button id="invertBtn" type="button">Invert Image</button>
+      
+      <!-- Label for Saturation Slider -->
+      <label for="saturationSlider">Saturation:</label>
+      <input
+        id="saturationSlider"
+        type="range"
+        min="0"
+        max="2"
+        step="0.01"
+        value="1"
+        >
+        
+        <!-- Label for Brightness Slider -->
+        <label for="brightnessSlider">Brightness:</label>
+        <input
+        id="brightnessSlider"
+        type="range"
+        min="-100"
+        max="100"
+        step="1"
+        value="0"
+        >
+        
+        <button id="mirrorBtn" type="button">Mirror Image</button>
+        <button id="resetBtn" type="button">Reset Image</button>
+    </div>
+    <div class="right-side">
+      <div class="image-upload-box">
+        <label for="formFileLg" class="form-label">Upload an Image</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file">
+        <img id="uploadedImage" class="uploaded-image" src="">
+        
+      </div>
+      
+      <button class="down-btn">
+        <span>DOWNLOAD</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <polyline points="1 1 6.5 9 12 1"></polyline>
+        </svg>
+      </button>
+      
+    </div>
+    
+    </div>
+  </div>
+
+  <script src="scripts/grayscale.js"></script>
+  <script src="scripts/brightness.js"></script>
+  <script src="scripts/invert.js"></script>
+  <script src="scripts/saturation.js"></script>
+  <script src="scripts/mirror.js"></script>
+  <script src="scripts/reset.js"></script>
+  <script src="scripts/main.js"></script>
+  <footer class="social-icons">
+    <a href="https://github.com/Devank-Garg" target="_blank" rel="noopener noreferrer"
+      ><i class="fab fa-github"></i
+    ></a>
+    <a href="https://www.linkedin.com/in/devank-here/" target="_blank" rel="noopener noreferrer"
+      ><i class="fab fa-linkedin"></i
+    ></a>
+  </footer>
+</body>
+</html>
