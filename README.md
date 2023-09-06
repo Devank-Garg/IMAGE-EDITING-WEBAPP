@@ -19,3 +19,11 @@
 * Image Mirroring: Create a mirrored version of images.
 * Reset Image: Reset the processed image to its original state.
 * Responsive Design: The web app is responsive and works on various screen sizes.
+
+
+## Getting Started
+### To run this web app locally or deploy it to your own server, follow these steps:
+Clone the Repository:
+``` git clone https://github.com/yourusername/image-web-app.git
+cd image-web-app
+```
