@@ -23,8 +23,23 @@
 
 ## Getting Started
 ### To run this web app locally or deploy it to your own server, follow these steps:
-Clone the Repository:
+## Clone the Repository:
 ```
 git clone https://github.com/yourusername/image-web-app.git
 cd image-web-app
 ```
+## Install Dependencies:
+
+This web app may require certain dependencies. Refer to the package.json file for details.
+```bash
+npm install
+```
+
+## Configure the Environment:
+
+If your app requires any environment variables, make sure to create a .env file and add the necessary configuration.
+```bash
+npm start
+```
+
+The app will be available at http://localhost:3000 by default.
