@@ -24,6 +24,7 @@
 ## Getting Started
 ### To run this web app locally or deploy it to your own server, follow these steps:
 Clone the Repository:
-``` git clone https://github.com/yourusername/image-web-app.git
+```
+git clone https://github.com/yourusername/image-web-app.git
 cd image-web-app
 ```
