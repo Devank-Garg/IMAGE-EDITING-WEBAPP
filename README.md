@@ -43,3 +43,27 @@ npm start
 ```
 
 The app will be available at http://localhost:3000 by default.
+
+## Usage
+### Upload Image:
+
+Click the "Choose File" button to upload an image.
+
+### Grayscale Conversion:
+
+Click the "Change to Grayscale" button to convert the image to grayscale.
+### Brightness Adjustment:
+
+Use the brightness slider to adjust the image's brightness.
+### Image Inversion:
+
+Click the "Invert Image" button to invert the colors of the image.
+### Saturation Adjustment:
+
+Use the saturation slider to adjust the image's saturation.
+### Image Mirroring:
+
+Click the "Mirror Image" button to create a mirrored version of the image.
+### Reset Image:
+
+Click the "Reset Image" button to revert the image to its original state.
